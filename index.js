@@ -11,10 +11,14 @@ const port = 3000;
 
 // If 'uploads' is a subfolder within 'public'
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
+app.use('/accets', express.static(path.join(__dirname, 'accets')));
 app.use('/uploads', express.static('uploads'));
 // MongoDB setup
-mongoose.connect('mongodb://localhost/candidate_management', { useNewUrlParser: true, useUnifiedTopology: true });
+// brjP3hFg8u9znsZ2
+// swapnilpatil8771
+
+
+mongoose.connect('mongodb+srv://swapnilpatil8771:brjP3hFg8u9znsZ2@cluster0.4n9juru.mongodb.net', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 

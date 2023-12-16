@@ -67,9 +67,12 @@ const logout = (req, res) => {
       console.error(err);
       return res.status(500).json({ message: 'Internal server error' });
     }
-    res.status(200).json({ message: 'Logout successful' });
+    
+    // Redirect to the login page with a logout message
+    res.redirect('/auth/login?message=Logout successful');
   });
 };
+
 
 module.exports = {
   signup,
