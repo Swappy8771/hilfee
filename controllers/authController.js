@@ -68,7 +68,7 @@ const logout = (req, res) => {
       return res.status(500).json({ message: 'Internal server error' });
     }
     
-    // Redirect to the login page with a logout message
+    
     res.redirect('/auth/login?message=Logout successful');
   });
 };

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/accets/css/dashboard.css" />
+    <style>
+      .video-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .video-box {
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      video {
+        max-width: 100%;
+        max-height: 150px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      #timer {
+        margin-top: 5px;
+      }
+    </style>
+    <title>My Jobs</title>
+  </head>
+  <body>
+    <div id="left-menu">
+      <ul>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/job-portal">Job Portal</a></li>
+        <li><a href="/my-jobs">My Jobs</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>My Jobs</h1>
+
+      <% candidateRoles.forEach(role => { %>
+      <h2><%= role.selectedRole %></h2>
+      <% jobPrompts.forEach(prompt => { %>
+      <form id="<%= `form_${role._id}_${prompt._id}` %>">
+        <div class="video-container">
+          <div class="video-box">
+            <label><%= prompt.title %></label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('<%= role._id %>', '<%= prompt._id %>')"
+            >
+              Record/Re-record Video
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="<%= `video_${role._id}_${prompt._id}` %>"
+              src="uploads/<%= videoObject[`${role._id}_${prompt._id}`] %>"
+              controls
+            >
+              <source
+                src="uploads/<%= videoObject[`${role._id}_${prompt._id}`] %>"
+                type="video/webm"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              type="button"
+              onclick="playVideo('<%= role._id %>', '<%= prompt._id %>', 'uploads/<%= videoObject[`${role._id}_${prompt._id}`] %>')"
+            >
+              Play Video
+            </button>
+          </div>
+          <div class="video-box">
+            <button
+              type="button"
+              onclick="submitVideo('<%= role._id %>', '<%= prompt._id %>')"
+            >
+              Submit Video
+            </button>
+          </div>
+        </div>
+      </form>
+      <% }); %> <% }); %>
+
+      <script>
+        async function recordOrReRecordVideo(roleId, promptId) {
+          const formElement = document.getElementById(
+            `form_${roleId}_${promptId}`
+          );
+          const videoElement = document.getElementById(
+            `video_${roleId}_${promptId}`
+          );
+
+          try {
+            const stream = await navigator.mediaDevices.getUserMedia({
+              video: true,
+              audio: true,
+            });
+            const mediaRecorder = new MediaRecorder(stream);
+            const chunks = [];
+
+            mediaRecorder.ondataavailable = (event) => {
+              if (event.data.size > 0) {
+                chunks.push(event.data);
+              }
+            };
+
+            mediaRecorder.onstop = async () => {
+              const blob = new Blob(chunks, { type: "video/webm" });
+              const videoUrl = URL.createObjectURL(blob);
+
+              videoElement.src = videoUrl;
+            };
+
+            mediaRecorder.start();
+
+            setTimeout(() => {
+              mediaRecorder.stop();
+            }, 10000);
+          } catch (error) {
+            console.error("Error recording video:", error);
+          }
+        }
+
+        async function submitVideo(roleId, promptId) {
+          const formElement = document.getElementById(
+            `form_${roleId}_${promptId}`
+          );
+          const videoElement = document.getElementById(
+            `video_${roleId}_${promptId}`
+          );
+
+          try {
+            const formData = new FormData(formElement);
+            formData.append("roleId", roleId);
+            formData.append("promptId", promptId);
+            formData.append(
+              "video",
+              await fetch(videoElement.src).then((response) => response.blob())
+            );
+
+            const response = await fetch("/upload-video", {
+              method: "POST",
+              body: formData,
+            });
+
+            if (response.ok) {
+              alert("Video submitted successfully!");
+            } else {
+              alert("Error submitting video.");
+            }
+          } catch (error) {
+            console.error("Error submitting video:", error);
+          }
+        }
+        function playVideo(roleId, promptId, url) {
+          console.log(url);
+          const videoId = `video_${roleId}_${promptId}`;
+          const videoElement = document.getElementById(videoId);
+
+          const videoUrl = url;
+
+          videoElement.src = videoUrl;
+
+          if (videoElement.paused) {
+            videoElement.play();
+          } else {
+            videoElement.pause();
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

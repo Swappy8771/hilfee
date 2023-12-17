@@ -76,12 +76,10 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Style for file input */
 input[type="file"] {
   margin-top: 5px;
 }
 
-/* Style for links in the content area */
 #content a {
   color: #3498db;
 }
