@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/accets/css/dashboard.css" />
+    <style>
+      .video-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .video-box {
+        display: flex;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        min-width: 270px;
+        min-height: 175px;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .button-container {
+        margin-top: 10px;
+      }
+      .button-container button {
+        margin-right: 10px;
+      }
+
+      video {
+        max-width: 100%;
+        max-height: 150px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      #timer {
+        margin-top: 5px;
+      }
+    </style>
+    <title>My Jobs</title>
+  </head>
+  <body>
+    <div id="left-menu"><h1 class="logo-t">Placeholder Logo</h1>
+      <ul>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/job-portal">Job Portal</a></li>
+        <li><a href="/my-jobs">My Jobs</a></li>
+        <li><a href="/auth/logout">Sign Out</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>My Jobs</h1>
+
+      
+      <h2>Retail/B2C Sales - Inside Sales</h2>
+      
+      <form id="form_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da4">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your educational background</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da4')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da4"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da4_1703184237132.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da4')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da4"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da4')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da4" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da5">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your family background
+</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da5')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da5"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da5_1703182853188.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da5')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da5"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da5')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da5" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da6">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about Internships/Experience (Pls talk about your roles responsibilities and achievements)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da6')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da6"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da6_1703182837555.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da6')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da6"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da6')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da6" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da7">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Talk about your skill sets (Both Technical and Non Technical)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da7')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da7"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da7_1703164278146.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da7')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da7"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da7')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da7" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da8">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Give a Topic of Interest and ask the person to speak for a minute on that.</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da8')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da8"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da8_1703164280140.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da8')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da8"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d927c42be37ce10fe3e0f', '657d9eeb6a6abfc851a55da8')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d927c42be37ce10fe3e0f_657d9eeb6a6abfc851a55da8" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+       
+      <h2>Retail/B2C Sales - Field Sales</h2>
+      
+      <form id="form_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da4">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your educational background</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da4')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da4"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da4_1703164282769.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da4')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da4"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da4')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da4" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da5">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your family background
+</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da5')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da5"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da5_1703164298449.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da5')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da5"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da5')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da5" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da6">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about Internships/Experience (Pls talk about your roles responsibilities and achievements)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da6')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da6"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <source
+                src="uploads/657d4b3fb217c3a12c4a54f1_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da6_1703164437571.webm"
+                type="video/webm"
+              />
+              Your browser does not support the video tag. 
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da6')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da6"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da6')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da6" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da7">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Talk about your skill sets (Both Technical and Non Technical)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da7')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da7"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da7')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da7"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da7')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da7" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da8">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Give a Topic of Interest and ask the person to speak for a minute on that.</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da8')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da8"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da8')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da8"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657d9582846d55a2091c8fde', '657d9eeb6a6abfc851a55da8')"
+              >
+                Submit
+              </button>
+              <p id="timer_657d9582846d55a2091c8fde_657d9eeb6a6abfc851a55da8" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+       
+      <h2>Sales Support and Operations</h2>
+      
+      <form id="form_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da4">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your educational background</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da4')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da4"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da4')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da4"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da4')"
+              >
+                Submit
+              </button>
+              <p id="timer_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da4" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da5">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about your family background
+</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da5')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da5"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da5')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da5"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da5')"
+              >
+                Submit
+              </button>
+              <p id="timer_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da5" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da6">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Tell me about Internships/Experience (Pls talk about your roles responsibilities and achievements)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da6')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da6"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da6')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da6"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da6')"
+              >
+                Submit
+              </button>
+              <p id="timer_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da6" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da7">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Talk about your skill sets (Both Technical and Non Technical)</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da7')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da7"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da7')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da7"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da7')"
+              >
+                Submit
+              </button>
+              <p id="timer_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da7" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <form id="form_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da8">
+        <div class="video-container">
+          <div class="video-box">
+            <label>Give a Topic of Interest and ask the person to speak for a minute on that.</label>
+            <button
+              type="button"
+              onclick="recordOrReRecordVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da8')"
+            >
+              Record/Re-record
+            </button>
+          </div>
+          <div class="video-box">
+            <video
+              id="video_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da8"
+              width="300"
+              height="120"
+              controls
+            >
+              
+              <p>No video recorded yet.</p>
+              
+            </video>
+            <div class="actions-container">
+              <button
+                type="button"
+                onclick="playVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da8')"
+              >
+                Play
+              </button>
+
+              <button
+                type="button"
+                id="stopButton_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da8"
+              >
+                Stop rec
+              </button>
+              <button
+                type="button"
+                onclick="submitVideo('657df14c0105c60daeba24c1', '657d9eeb6a6abfc851a55da8')"
+              >
+                Submit
+              </button>
+              <p id="timer_657df14c0105c60daeba24c1_657d9eeb6a6abfc851a55da8" class="timer">
+                180s
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+       
+
+      <script>
+        let mediaRecorder;
+        let countdownInterval;
+
+        async function recordOrReRecordVideo(roleId, promptId) {
+          const formElement = document.getElementById(
+            `form_${roleId}_${promptId}`
+          );
+          const videoElement = document.getElementById(
+            `video_${roleId}_${promptId}`
+          );
+          const countdownElement = document.getElementById(
+            `timer_${roleId}_${promptId}`
+          );
+          const stopButton = document.getElementById(
+            `stopButton_${roleId}_${promptId}`
+          );
+
+          stopButton.addEventListener("click", () => {
+            stopVideo(roleId, promptId);
+          });
+
+          try {
+            const stream = await navigator.mediaDevices.getUserMedia({
+              video: true,
+              audio: true,
+            });
+
+            // Set srcObject or src attribute before starting recording
+            if ("srcObject" in videoElement) {
+              videoElement.srcObject = stream;
+            } else {
+              videoElement.src = window.URL.createObjectURL(stream);
+            }
+
+            mediaRecorder = new MediaRecorder(stream);
+            const chunks = [];
+            let countdown = 5; // Set the initial countdown time (in seconds)
+
+            mediaRecorder.ondataavailable = (event) => {
+              if (mediaRecorder.state === "recording" && event.data.size > 0) {
+                chunks.push(event.data);
+              }
+            };
+
+            mediaRecorder.onstop = async () => {
+              const blob = new Blob(chunks, { type: "video/webm" });
+              const videoUrl = URL.createObjectURL(blob);
+
+              // Set srcObject or src attribute and revoke the previous object URL
+              if ("srcObject" in videoElement) {
+                videoElement.srcObject = null;
+                videoElement.srcObject = stream;
+              } else {
+                videoElement.src = videoUrl;
+                URL.revokeObjectURL(videoElement.src);
+              }
+
+              countdownElement.textContent = ""; // Clear countdown after recording stops
+            };
+
+            mediaRecorder.start();
+
+            countdownInterval = setInterval(() => {
+              countdownElement.textContent = `${countdown}s `;
+              countdown--;
+
+              if (countdown < 0) {
+                clearInterval(countdownInterval);
+                mediaRecorder.stop();
+              }
+            }, 1000);
+          } catch (error) {
+            console.error("Error accessing camera or recording video:", error);
+            // Add user-friendly error message or UI feedback
+          }
+        }
+
+        async function submitVideo(roleId, promptId) {
+          const formElement = document.getElementById(
+            `form_${roleId}_${promptId}`
+          );
+          const videoElement = document.getElementById(
+            `video_${roleId}_${promptId}`
+          );
+
+          try {
+            const formData = new FormData(formElement);
+            formData.append("roleId", roleId);
+            formData.append("promptId", promptId);
+
+            // Get the blob data from the video element
+            const blob = await fetch(videoElement.src).then((response) =>
+              response.blob()
+            );
+
+            // Append the blob data to the FormData
+            formData.append("video", blob, "recordedVideo.webm");
+
+            const response = await fetch("/upload-video", {
+              method: "POST",
+              body: formData,
+            });
+
+            if (response.ok) {
+              alert("Video submitted successfully!");
+              location.reload();
+            } else {
+              alert("Error submitting video.");
+            }
+          } catch (error) {
+            console.error("Error submitting video:", error);
+          }
+        }
+
+        function stopVideo(roleId, promptId) {
+          const countdownElement = document.getElementById(
+            `timer_${roleId}_${promptId}`
+          );
+
+          if (mediaRecorder && mediaRecorder.state !== "inactive") {
+            mediaRecorder.stop();
+            clearInterval(countdownInterval); // Clear the countdown interval
+            countdownElement.textContent = "0s"; // Clear the countdown text
+          }
+          mediaRecorder.stream.getTracks().forEach((track) => track.stop());
+          chunks.length = 0;
+        }
+
+        function playVideo(roleId, promptId) {
+          const videoElement = document.getElementById(
+            `video_${roleId}_${promptId}`
+          );
+          if (videoElement) {
+            videoElement.play();
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

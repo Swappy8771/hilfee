@@ -54,9 +54,11 @@ const uploadVideo = async (req, res) => {
     const videoFileName = `${userId}_${roleId}_${promptId}_${Date.now()}.webm`;
 
     
-    const videoPath = path.join('uploads', videoFileName);
-    await fs.writeFile(videoPath, videoBuffer);
-
+    const uploadDirectory = path.join(__dirname, './../uploads');
+    await fs.promises.mkdir(uploadDirectory, { recursive: true });
+    
+    const videoPath = path.join(uploadDirectory, videoFileName);
+    await fs.promises.writeFile(videoPath, videoBuffer);
     
     const video = new Video({
       userId,
